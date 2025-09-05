@@ -1,0 +1,151 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp} % provide euro and other symbols
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+\section{Matematikens domänspecifika språk för andra kurser}\label{dslsofmath-matematikens-domuxe4nspecifika-spruxe5k-fuxf6r-andra-kurser}
+[DSLsofMathBSc25]
+
+Förslagslämnare: Patrik Jansson
+
+\begin{abstract}
+\input{abstract.txt}
+\end{abstract}
+
+\subsection{Bakgrund:}\label{bakgrund}
+
+DSLsofMath {[}1,2,3{]} är namnet på ett pedagogiskt projekt som lett
+till en valfri kurs i årskurs 2-3 riktad till datavetare och matematiker
+på Chalmers och GU. Kursen presenterar klassiska matematiska ämnen från
+ett datavetenskapligt perspektiv: genom att specificera de introducerade
+begreppen, vara uppmärksam på syntax och typer, och slutligen genom att
+bygga domänspecifika språk for vissa matematiska områden. (Exempelvis
+linjär algebra, Laplace-transform, potensserier, derivator.)
+
+Inspirerat av detta har flera studentgrupper genomfört
+kandidatarbetesprojekt under de senaste åren med följande resultat:
+
+\begin{itemize}
+\tightlist
+\item
+  2016: Programmering som undervisningsverktyg för Transformer, signaler
+  och system - Utvecklingen av läromaterialet TSS med DSL
+\item
+  2018: Ett komplementerande läromaterial för datastudenter som lär sig
+  fysik - Läromaterialet Learn You a Physics for Great Good!
+\item
+  2020: A Computer Science Approach to Teaching Control Theory -
+  Developing Learning Material Using Domain-Specific Languages
+\item
+  2022: HasLin - ett DSL för linjär algebra - Utvecklandet av ett
+  matematiskt domänspecifikt språk för linjär algebra i Haskell
+\end{itemize}
+
+\subsection{Projektbeskriving:}\label{projektbeskriving}
+
+Det här kandidatprojektet går ut på att ta fram DSLsofMath-inspirerat
+kompletterande material för andra närliggande kurser som exempelvis
+
+\begin{itemize}
+\tightlist
+\item
+  Matematisk statistik och diskret matematik, eller
+\item
+  Flervariabelanalys, eller
+\item
+  Data Science \& AI, eller
+\item
+  andra kurser som ni känner skulle må bra av mer fokus på syntax, typer
+  och funktioner.
+\end{itemize}
+
+Implementationsspråk är Haskell och Agda och målet är dels att förbättra
+förståelsen hos projekt\-medlemmarna av de kurser och ämnen som väljs och
+dels att ge framtida studenter mer material att arbeta med. Materialet
+som utvecklas skall finnas öppet tillgängligt på github.
+
+Efter ett par år med huvudfokus på lärmaterial (tutorial / lecture
+notes) är fokus i år mer inriktat mot korrekthet: DSL, typer,
+specifikation, test, bevis.
+
+\pagebreak
+Att göra (``produkt''):
+
+\begin{itemize}
+\tightlist
+\item
+  Designa och implementera (ett par) DSL för det valda området
+\item
+  Specificera lagar som bör gälla i Haskell eller Agda
+\item
+  Testa de lagar som kan testas med QuickCheck
+\item
+  Bevisa någon eller några lagar i Agda
+\item
+  \ldots{} samt dokumentation i form av kandidatarbetesrapport mm.
+\end{itemize}
+
+\subsection{Länkar:}\label{luxe4nkar}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item \href{https://github.com/DSLsofMath/DSLsofMath}{github.com/DSLsofMath/DSLsofMath}
+\item \href{https://www.cse.chalmers.se/~patrikj/papers/Ionescu_Jansson_DSLsofMath_TFPIE_2015_paper_preprint.pdf}{DSLsofMath\_TFPIE\_2015\_paper\_preprint.pdf}
+\item \href{https://www.cse.chalmers.se/~patrikj/papers/Janssonetal_DSLsofMathCourseExamplesResults_preprint_2018-08-17.pdf}{DSLsofMathCourseExamplesResults\_preprint\_2018-08-17.pdf}
+\end{enumerate}
+
+\subsection{Målgrupp:}\label{muxe5lgrupp}
+
+DV, D, IT, TM
+
+\subsection{Särskilda förkunskaper:}\label{suxe4rskilda-fuxf6rkunskaper}
+
+Funktionell programmering (Haskell) och kursen DSLsofMath eller gott om
+matematik (TM-programmet eller liknande).
+
+(Det kan gå att ta kursen DSLsofMath parallellt med projektet, men det
+blir svårare.)
+
+\subsection{Handledare:}\label{handledare}
+
+Patrik Jansson eller annan person inom FP-gruppen.
+
+\end{document}
