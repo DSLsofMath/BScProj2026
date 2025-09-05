@@ -1,5 +1,9 @@
 Title: Matematikens domänspecifika språk för andra kurser
 Author: Patrik Jansson
 Abstract:
-Projektet går ut på att utveckla ett domänspecifikt språk (DSL) för kursmaterialet i en matematisk eller teknisk kurs som gruppen väljer (statistik, optimering, DSAI, annat?). För att fördjupa förståelsen av ämnet - både för er själva och och för kommande studenter - uttrycker ni funktioner, typer, egenskaper, tester, och kanske även bevis med hjälp av välkommenterad källkod i Haskell och Agda samt en skriver en projektrapport, gärna i form av en tutorial.
-URL: 
+Projektet går ut på att utveckla ett domänspecifikt språk (DSL) för kursmaterialet i en matematisk eller teknisk kurs som gruppen väljer (statistik, optimering, DSAI, annat?). För att fördjupa förståelsen av ämnet - både för er själva och och för kommande studenter - uttrycker ni funktioner, typer, egenskaper, tester, och kanske även bevis med hjälp av välkommenterad källkod i Haskell och Agda samt skriver en projektrapport, gärna i form av en tutorial.
+Förkunskaper:
+Funktionell programmering (Haskell) och kursen DSLsofMath eller gott om matematik (TM-programmet eller liknande).
+(Det kan gå att ta kursen DSLsofMath parallellt med projektet, men det blir svårare.)
+URL: https://github.com/DSLsofMath/BScProj2026/blob/main/DSLsofMath_andra_kurser.pdf
+
